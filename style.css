@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 25px;
+    background: blanchedalmond;
+}
+
+article {
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url("./clock-8417328_1280.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    box-shadow: 15px 20px 25px burlywood;
+    background-color: #F7F7F7;
+}
+
+
+/* It can be done by using CSS only using Animation */
+
+/* .hour, .minute, .second {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%);
+}
+
+.hour {
+    height: 75px;
+    width: 5px;
+    background-color: yellow;
+    animation: rotateHour 43200s infinite linear;
+}
+
+.minute {
+    height: 125px;
+    width: 5px;
+    background-color: lightblue;
+    animation: rotateMinute 3600s infinite linear;
+}
+
+.second {
+    height: 175px;
+    width: 2px;
+    background-color: black;
+    animation: rotateSecond 60s infinite linear;
+} */
+
+.hour {
+    height: 100px;
+    width: 5px;
+    /* background: #3D3B40; */
+    background: #333333;
+    /* transform: translate(247px,100px); */
+    top: 150px;
+    left: 247px;
+    position: relative;
+    transform-origin: bottom;
+    /* animation: rotateHour 43200s infinite linear; */
+    border-radius: 35%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.minute {
+    height: 125px;
+    width: 5px;
+    /* background: #3D3B40; */
+    background: #333333;
+    /* transform: translate(247px,155px); */
+    top: 125px;
+    left: 247px;
+    position: absolute;
+    transform-origin: bottom;
+    /* animation: rotateMinute 3600s infinite linear; */
+    border-radius: 35%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.second {
+    height: 170px;
+    width: 5px;
+    /* background: #3D3B40; */
+    background: #333333;
+    top: 80px;
+    left: 247px;
+    /* transform: translate(247px,190px); */
+    position: absolute;
+    transform-origin: bottom;
+    /* animation: rotateSecond 60s infinite linear; */
+    border-radius: 35%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+#clock {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgb(255, 0, 43), rgb(255, 0, 102), rgb(255, 0, 123));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    box-shadow: 0 0 20px rgb(255, 0, 102);
+    text-shadow: 0 0 10px rgb(255, 0, 102), 0 0 20px rgb(255, 0, 115), 0 0 30px rgb(255, 0, 162);
+    letter-spacing: 0.1em;
+    font-size: 6em;
+}
+
+
+/* media queries */
+
+@media (max-width:550px) {
+    article {
+        height: 400px;
+        width: 400px;
+    }
+
+    .hour {
+        height: 75px;
+        width: 5px;
+        background: #3D3B40;
+        /* transform: translate(247px,100px); */
+        top: 134px;
+        left: 199px;
+        position: relative;
+        transform-origin: bottom;
+        /* animation: rotateHour 43200s infinite linear; */
+        border-radius: 35%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+
+    .minute {
+        height: 100px;
+        width: 5px;
+        background: #3D3B40;
+        /* transform: translate(247px,155px); */
+        top: 107px;
+        left: 198px;
+        position: absolute;
+        transform-origin: bottom;
+        /* animation: rotateMinute 3600s infinite linear; */
+        border-radius: 35%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+
+    .second {
+        height: 130px;
+        width: 5px;
+        background: #3D3B40;
+        top: 79px;
+        left: 200px;
+        /* transform: translate(247px,190px); */
+        position: absolute;
+        transform-origin: bottom;
+        /* animation: rotateSecond 60s infinite linear; */
+        border-radius: 35%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+
+    }
+
+}
+
+
+    /* Setting Alarm Configuration */
+    /* #alarm {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+#set-alarm, #clear-alarm {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+} */
+
+
+
+    /* Animation */
+    /* @keyframes rotateHour {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateMinute {
+    from {
+        transform: translateX(-50%) rotate(0deg)
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateSecond {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+} */
